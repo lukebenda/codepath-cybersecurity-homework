@@ -2,18 +2,19 @@
 
 Time spent: **6** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **XSS via Media File's Metadata five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document **1. XSS via Media File's Metadata, 2. , 3.** affecting an old version of WordPress
 
 ## Pentesting Report
 
 1. (Required) Vulnerability Name or ID **Authenticated Cross-Site Scripting (XSS) via Media File Metadata**
-  - [ ] Summary: 
+  - [x] Summary: 
     - Vulnerability types:**XSS**
     - Tested in version: **4.1**
     - Fixed in version: **4.1.16**
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
   <img src="XSS_Media.gif" width="800">
-  - [ ] Steps to recreate: <br>
+  - [x] Steps to recreate:
+  
     **1. Logged into word press as administrator**<br>
     **2. Navigated to 'Media' tab**<br>
     **3. Click on 'add new'**<br>
