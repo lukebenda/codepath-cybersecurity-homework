@@ -12,20 +12,23 @@ Time spent: **6** hours spent in total
     - Tested in version: **4.1**
     - Fixed in version: **4.1.16**
   - [x] GIF Walkthrough: 
-  <img src="XSS_Media.gif" width="800">
+  <img src="XSS_Media.gif" width="800"> 
+  
   - [x] Steps to recreate:
   
     **1. Logged into word press as administrator**<br>
-    **2. Navigated to 'Media' tab**<br>
-    **3. Click on 'add new'**<br>
-    **4. Choose an image to upload and save to local machine**
-    **5. Name the image file:** ```yourNameHere <img src= a onerror=alert("You're Alert Here!")>.jpg```
-         
-    **6. **
-    **3. **
-    **3. **
+    **2. Choose an image to upload and save to local machine**
+    **3. Name the image file:** ```yourNameHere <img src= a onerror=alert("You're Alert Here!")>.jpg```
+    **4. Navigate to 'Media' tab**<br>
+    **5. Click on 'add new'**<br>
+    **6. Browse for image/drag into the upload section**
+    **7. Click on the image and select 'Edit more details'**
+    **8. Make sure the title is the name you gave the image file in step 3, with the ```<img>``` tag**
+    **9. Then select 'View Attachment Page'**
+    **10.When vieiwin the page, the alert is displayed, thus the exploit succeeds.**
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    
     **N/A**
     
 2. (Required) Vulnerability Name or ID
