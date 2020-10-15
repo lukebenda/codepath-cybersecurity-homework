@@ -31,21 +31,26 @@ Time spent: **6** hours spent in total
        **N/A**
     
 2. (Required) Vulnerability Name or ID **Nav Menu Title Cross-Site Scripting (XSS)**
-  - [ ] Summary: 
+  - [x] Summary: 
     - Vulnerability types:**(XSS)**
     - Tested in version:**4.1**
     - Fixed in version: **4.2.4**
-  - [ ] GIF Walkthrough: <img src="XSS_Media.gif" width="800">
-  - [ ] Steps to recreate: 
-  
-  **Cross-site scripting (XSS) vulnerability in the refreshAdvancedAccessibilityOfItem function in wp-admin/js/nav-menu.js in WordPress before 4.2.4 allows remote attackers to inject arbitrary web script or HTML via an accessibility-helper title.**<br>
-  **1. Logged into word press as administrator**<br>
-    **2. Choose an image to upload and save to local machine**<br>
-    **3. Name the image file:** ```yourNameHere <img src= a onerror=alert("You're Alert Here!")>.jpg```<br>
-    **4. Navigate to 'Media' tab**<br>
-    **5. Click on 'add new'**<br>
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [x] GIF Walkthrough: <img src="Nav_Menu_XSS.gif" width="800">
+  - [x] Steps to recreate: 
+    **Cross-site scripting (XSS) vulnerability in the refreshAdvancedAccessibilityOfItem function in wp-admin/js/nav-menu.js in WordPress before 4.2.4 allows remote attackers to inject arbitrary web script or HTML via an accessibility-helper title.**<br>
+    **1. Logged into word press as administrator**<br>
+    **2. Navigate to the 'Appearance' tab**<br>
+    **3. Select 'Menus'**<br>
+    **4. Give the new menu a name (example: Main Menu) and press Enter or click 'Create Menu'**<br>
+    **5. Then select a page to add to the menu and click 'Add to Menu'**<br>
+    **6. Click the drop down arrow on the page bar**<br>
+    **7. Replace the Navigation Label with the following code:** ```<script>alert(document.cookie);</script>```<br>
+    **8. Click 'Save Menu'**<br>
+    **9. A popup will appear indicting a successful exploit**<br> 
+    
+  - [x] Affected source code:
+    - [Link 1](https://atimmer.github.io/wordpress-jsdoc/-_enqueues_lib_nav-menu.js.html)
+    
 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
