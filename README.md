@@ -14,6 +14,9 @@ Time spent: **6** hours spent in total
   - [ ] GIF Walkthrough: 
   <img src="XSS_Media.gif" width="800">
   - [ ] Steps to recreate: 
+    **1. Logged into word press as administrator
+    **2. 
+      3. **
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 2. (Required) Vulnerability Name or ID
