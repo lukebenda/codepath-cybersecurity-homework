@@ -35,7 +35,8 @@ Time spent: **6** hours spent in total
     - Vulnerability types:**(XSS)**
     - Tested in version:**4.1**
     - Fixed in version: **4.2.4**
-  - [x] GIF Walkthrough: <img src="Nav_Menu_XSS.gif" width="800">
+  - [x] GIF Walkthrough: 
+  <img src="Nav_Menu_XSS.gif" width="800">
   - [x] Steps to recreate: 
     **Cross-site scripting (XSS) vulnerability in the refreshAdvancedAccessibilityOfItem function in wp-admin/js/nav-menu.js in WordPress before 4.2.4 allows remote attackers to inject arbitrary web script or HTML via an accessibility-helper title.**<br>
     **1. Logged into word press as administrator**<br>
