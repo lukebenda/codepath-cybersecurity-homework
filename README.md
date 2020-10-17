@@ -9,7 +9,7 @@ Time spent: **6** hours spent in total
 1. (Required) Vulnerability Name or ID **Authenticated Cross-Site Scripting (XSS) via Media File Metadata**
   - [x] Summary: 
     - Vulnerability types:**XSS**
-    - Tested in version: **4.1**
+    - Tested in version: **4.1.1**
     - Fixed in version: **4.1.16**
   - [x] GIF Walkthrough: 
   <img src="XSS_Media.gif" width="800"> 
@@ -33,7 +33,7 @@ Time spent: **6** hours spent in total
 2. (Required) Vulnerability Name or ID **Nav Menu Title Cross-Site Scripting (XSS)**
   - [x] Summary: 
     - Vulnerability types:**(XSS)**
-    - Tested in version:**4.1**
+    - Tested in version:**4.1.1**
     - Fixed in version: **4.2.4**
   - [x] GIF Walkthrough: 
   <img src="Nav_Menu_XSS.gif" width="800">
@@ -52,15 +52,27 @@ Time spent: **6** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://atimmer.github.io/wordpress-jsdoc/-_enqueues_lib_nav-menu.js.html)
     
-3. (Required) Vulnerability Name or ID
+3. (Required) Vulnerability Name or ID **Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds**
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: **XSS**
+    - Tested in version:**4.1.1**
+    - Fixed in version: **4.1.16**
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  
+  - [ ] Steps to recreate:<br>
+    **1. Logged into word press as administrator**<br>
+    **2. Navigate to the 'Posts' tab**<br>
+    **3. Select 'Add New'**<br>
+    **4. Give the new post a name**<br>
+    **5. Then paste the following embed fake YouTube link:** ```[embed src="http://youtube.com/embed/12345\x3csvg onload=alert('Hacked...Again!')\x3e"][/embed]```<br>
+    NOTE: 12345 and the alert message can be customized<br>
+    **6. Click 'Preview'**<br>
+    **7. An alert will pop up on the page indicating a successful exploit<br>
+  
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+    - [CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817)
+    
 4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
