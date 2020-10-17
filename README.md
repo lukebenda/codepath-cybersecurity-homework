@@ -57,7 +57,7 @@ Time spent: **6** hours spent in total
     - Vulnerability types: **XSS**
     - Tested in version:**4.1.1**
     - Fixed in version: **4.1.16**
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
   <img src="YouTube_Hack.gif" width="800">
   
   - [x] Steps to recreate:<br>
@@ -65,10 +65,9 @@ Time spent: **6** hours spent in total
     **2. Navigate to the 'Posts' tab**<br>
     **3. Select 'Add New'**<br>
     **4. Give the new post a name**<br>
-    **5. Then paste the following embed fake YouTube link:** ```[embed src="http://youtube.com/embed/12345\x3csvg onload=alert('Hacked...Again!')\x3e"][/embed]```<br>
-    NOTE: 12345 and the alert message can be customized<br>
+    **5. Then paste the following embed fake YouTube link:** ```[embed src="http://youtube.com/embed/12345\x3csvg onload=alert('Hacked...Again!')\x3e"][/embed]```<br>NOTE: 12345 and the alert message can be customized<br>
     **6. Click 'Preview'**<br>
-    **7. An alert will pop up on the page indicating a successful exploit<br>
+    **7. An alert will pop up on the page indicating a successful exploit**<br>
   
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
