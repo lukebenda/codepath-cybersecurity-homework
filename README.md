@@ -58,7 +58,7 @@ Time spent: **6** hours spent in total
     - Tested in version:**4.1.1**
     - Fixed in version: **4.1.16**
   - [ ] GIF Walkthrough: 
-  
+  <img src="YouTube_Hack.gif" width="800">
   - [ ] Steps to recreate:<br>
     **1. Logged into word press as administrator**<br>
     **2. Navigate to the 'Posts' tab**<br>
