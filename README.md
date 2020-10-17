@@ -53,13 +53,14 @@ Time spent: **6** hours spent in total
     - [Link 1](https://atimmer.github.io/wordpress-jsdoc/-_enqueues_lib_nav-menu.js.html)
     
 3. (Required) Vulnerability Name or ID **Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds**
-  - [ ] Summary: 
+  - [x] Summary: 
     - Vulnerability types: **XSS**
     - Tested in version:**4.1.1**
     - Fixed in version: **4.1.16**
   - [ ] GIF Walkthrough: 
   <img src="YouTube_Hack.gif" width="800">
-  - [ ] Steps to recreate:<br>
+  
+  - [x] Steps to recreate:<br>
     **1. Logged into word press as administrator**<br>
     **2. Navigate to the 'Posts' tab**<br>
     **3. Select 'Add New'**<br>
@@ -69,7 +70,7 @@ Time spent: **6** hours spent in total
     **6. Click 'Preview'**<br>
     **7. An alert will pop up on the page indicating a successful exploit<br>
   
-  - [ ] Affected source code:
+  - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
     - [CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817)
     
