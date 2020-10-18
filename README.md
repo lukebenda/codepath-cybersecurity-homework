@@ -2,7 +2,7 @@
 
 Time spent: **6** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **1. XSS via Media File's Metadata, 2. , 3.** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document **1. Authenticated Cross-Site Scripting (XSS) via Media File Metadata, 2. Nav Menu Title Cross-Site Scripting (XSS), 3. Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds** affecting an old version of WordPress
 
 ## Pentesting Report
 
