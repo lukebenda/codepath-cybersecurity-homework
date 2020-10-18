@@ -32,7 +32,7 @@ Time spent: **6** hours spent in total
     
 2. (Required) Vulnerability Name or ID **Nav Menu Title Cross-Site Scripting (XSS)**
   - [x] Summary: 
-    - Vulnerability types:**(XSS)**
+    - Vulnerability types:**XSS**
     - Tested in version:**4.1.1**
     - Fixed in version: **4.2.4**
   - [x] GIF Walkthrough: 
