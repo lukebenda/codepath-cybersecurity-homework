@@ -73,15 +73,29 @@ Time spent: **6** hours spent in total
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
     - [CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817)
     
-4. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+4. (Optional) Vulnerability Name or ID **Authenticated Stored XSS via Crafted Links
+  - [x] Summary: 
+    - Vulnerability types: **XSS**
+    - Tested in version: **4.1.1**
+    - Fixed in version: **4.1.29**
+  - [x] GIF Walkthrough: 
+  
+  
+  - [x] Steps to recreate:<br> 
+    **1. Logged into word press as administrator**<br>
+    **2. Navigate to the 'Posts' tab**<br>
+    **3. Select 'Add New'**<br>
+    **4. Give the new post a name**<br>
+    **5. Then paste the following embed fake YouTube link:** ```[embed src="http://youtube.com/embed/12345\x3csvg onload=alert('Hacked...Again!')\x3e"][/embed]```<br>
+    
+  - [x] Affected source code:
+    - [Link 1](https://wpvulndb.com/vulnerabilities/9975)
+    - [Link 2](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16773)
+    - [Link 3](https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/)
+    - [Link 4](https://hackerone.com/reports/509930)
+    - [Link 5](https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-xvg2-m2f4-83m7)
+    - [Link 6](https://github.com/WordPress/wordpress-develop/commit/1f7f3f1f59567e2504f0fbebd51ccf004b3ccb1d)
+    
 5. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
