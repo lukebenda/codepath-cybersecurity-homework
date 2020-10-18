@@ -79,14 +79,15 @@ Time spent: **6** hours spent in total
     - Tested in version: **4.1.1**
     - Fixed in version: **4.1.29**
   - [x] GIF Walkthrough: 
-  
+  <img src="HoverHack.gif" width="800">
   
   - [x] Steps to recreate:<br> 
     **1. Logged into word press as administrator**<br>
     **2. Navigate to the 'Posts' tab**<br>
     **3. Select 'Add New'**<br>
-    **4. Give the new post a name**<br>
-    **5. Then paste the following embed fake YouTube link:** ```[embed src="http://youtube.com/embed/12345\x3csvg onload=alert('Hacked...Again!')\x3e"][/embed]```<br>
+    **4. In the title field, paste the following code (or something similar):** ```<a href="></a><a title=" target='abc' onmouseover=alert('HACKED!') ">This is a PoC for a Stored XSS</a>```<br>
+    **5. Click 'Preview'**<br>
+    **6. An alert will pop up on the page when hovering over the link indicating a successful exploit**<br>
     
   - [x] Affected source code:
     - [Link 1](https://wpvulndb.com/vulnerabilities/9975)
