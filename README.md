@@ -17,13 +17,20 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1:**Session Hijacking/Fixation**
 
 Description:
+1.Open up the provided PHP script: "hacktools/change_session_id.php" to get the session ID
+2.In another browser, 
+3.
 
-<img src="blue-vuln1.gif">
+**Session Hijacking**
+<img src="Session_Hijack.gif">
+<br><br>
+**Session Fixation**
+<img src="Session_Fixation.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: **SQL Injection (SQLi)**
 
 Description:
 
