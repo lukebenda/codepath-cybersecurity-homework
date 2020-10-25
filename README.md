@@ -45,11 +45,11 @@ Description:
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: **Cross-Site Scripting (XSS)**
 
 Description:
 
-<img src="green-vuln1.gif">
+<img src="XSS.gif">
 
 Vulnerability #2: **Username Enumeration**
 
