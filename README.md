@@ -60,19 +60,20 @@ Description:
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: **Insecure Direct Object Reference (IDOR)**
 
 Description:
 
-<img src="red-vuln1.gif">
+<img src="IDOR.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: **Cross-Site Request Forgery (CSRF)**
 
 Description:
 
-<img src="red-vuln2.gif">
+<img src="CSRF.gif">
 
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+**Describe any challenges encountered while doing the work**
+It was difficult to figure out which attacks would work on each site. This was the most time consuming part of the assignment.  Nevertheless, I acknowledge that this is a major aspect of hacking and what makes the assignment far closer to real-world encounters. 
