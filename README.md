@@ -20,6 +20,7 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 Vulnerability #1:**Session Hijacking/Fixation**
 
 Description:
+
   **Session Hijacking**
   1. Open up the log in page and the hacktools/change_session_id.php script on two seperate browsers
   2. Log in on one browser (victim - Safari on right) then open a new tab and use the hacktools/change_session_id.php script to get the session ID.
