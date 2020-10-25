@@ -44,7 +44,7 @@ Description:
   1. Log into the site and navigate to the Salespeople page
   2. Select 'Show' for any salesperson
   3. Add ```' OR SLEEP(3)=0--'``` to the end of the url. The sleep() function allows you to specify the number of seconds it takes for the page to load (3 and 7 seconds are shown in the GIF)
-<img src="SQLi.gif">
+<img src="Blue-SQLi.gif">
 
 ## Green
 
@@ -53,7 +53,7 @@ Vulnerability #1: **Cross-Site Scripting (XSS)**
 Description:
   1. 
 
-<img src="XSS.gif">
+<img src="Green-XSS.gif">
 
 Vulnerability #2: **Username Enumeration**
 
@@ -62,7 +62,7 @@ Description:
   2. When attempting to log in on the Green site with a nonexisting username, the error message is presented in plaintext. The html class for this error is labeled **"failed"**.
   3. The other two sites do not have these discrepancies.
   4. The mistake that the developer of the Green site made was using different classes for a username that does exist and a username that does not exist. He/she also forgot to bold the error message's text for a nonexisting username. This vulnerability allows an attacker to determine whether or not a username exists.
-<img src="User_Enumeration.gif">
+<img src="Green-User_Enumeration.gif">
 
 
 ## Red
@@ -71,13 +71,13 @@ Vulnerability #1: **Insecure Direct Object Reference (IDOR)**
 
 Description:
 
-<img src="IDOR.gif">
+<img src="Red-IDOR.gif">
 
 Vulnerability #2: **Cross-Site Request Forgery (CSRF)**
 
 Description:
 
-<img src="CSRF.gif">
+<img src="Red-CSRF.gif">
 
 
 ## Notes
