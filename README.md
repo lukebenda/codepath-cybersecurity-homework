@@ -31,10 +31,10 @@ Description:
 
   **Session Fixation**
   1. Open up the log in page and the hacktools/change_session_id.php script on two seperate browsers
-  2. Log in on one browser (victim - Safari on right) then open a new tab and use the hacktools/change_session_id.php script to get the session ID.
-  3. Copy the session ID.
-  4. On the other browser (attacker - Chrome on left), go to the hacktools/change_session_id.php script and change the session ID to match the one that was just copied.
-  5. Now, go to the log in page on the attacker browser and you will be logged in to the same account as the one on the victim browser without having to enter a username or password since it has the same session ID as the victim.
+  2. Open the hacktools/change_session_id.php script on the attacker browser (Chrome - left) and get a session ID. Copy the session ID.
+  3. On the other browser (victim - Safari on right), go to the hacktools/change_session_id.php script and change the session ID to match the one that was just copied.
+  4. Log in on the victim browser.
+  5. The attacker can now log in on the attacker browser.
 <img src="Session_Fixation.gif">
 
 Vulnerability #2: **SQL Injection (SQLi)**
