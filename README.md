@@ -51,13 +51,17 @@ Description:
 Vulnerability #1: **Cross-Site Scripting (XSS)**
 
 Description:
+  1. 
 
 <img src="XSS.gif">
 
 Vulnerability #2: **Username Enumeration**
 
 Description:
-
+  1. When attempting to log in on the Green site with a existing username, the error message is presented in bold. Also, the html class is labeled **"failure"**.
+  2. When attempting to log in on the Green site with a nonexisting username, the error message is presented in plaintext. The html class for this error is labeled **"failed"**.
+  3. The other two sites do not have these discrepancies.
+  4. The mistake that the developer of the Green site made was using different classes for a username that does exist and a username that does not exist. He/she also forgot to bold the error message's text for a nonexisting username. This vulnerability allows an attacker to determine whether or not a username exists.
 <img src="User_Enumeration.gif">
 
 
