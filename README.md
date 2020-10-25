@@ -51,7 +51,7 @@ Description:
 
 <img src="green-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: **Username Enumeration**
 
 Description:
 
