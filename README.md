@@ -40,7 +40,9 @@ Description:
 Vulnerability #2: **SQL Injection (SQLi)**
 
 Description:
-
+  1. Log into the site and navigate to the Salespeople page
+  2. Select 'Show' for any salesperson
+  3. Add ```' OR SLEEP(3)=0--'``` to the end of the url. The sleep() function allows you to specify the number of seconds it takes for the page to load (3 and 7 seconds are shown in the GIF)
 <img src="SQLi.gif">
 
 ## Green
