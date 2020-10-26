@@ -128,7 +128,7 @@ Description:
   2. Fill in a fkae name and email
   3. In the feedback section, paste the following script: ```<script>document.location="https://www.google.com"</script>``` 
   4. Click Submit 
-  5. Log in and click the 'Feedback' section
+  5. Log in and click the 'Feedback' section <br>
   *Note: Series of alerts are from other students also hacking the site*
   6. The script will run and take the user to the specified link
   
