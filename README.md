@@ -121,6 +121,18 @@ Description:
   
 <img src="Bonus-SQLi.gif">
 
+**Bonus Objective 2:** Build on Objective #4 (Cross-Site Scripting). Experiment to see if you can use XSS to direct the user to a new URL.
+
+Description:
+  1. Navigate to the 'Contact' tab
+  2. Fill in a fkae name and email
+  3. In the feedback section, paste the following script: ```<script>document.location="https://www.google.com"</script>``` 
+  4. Click Submit 
+  5. Log in and click the 'Feedback' section
+  *Note: Series of alerts are from other students also hacking the site*
+  6. The script will run and take the user to the specified link
+  
+<img src="Bonus-XSS.gif">
 
 ## Notes
 
