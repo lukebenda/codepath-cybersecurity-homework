@@ -111,3 +111,4 @@ Description:
 
 **Describe any challenges encountered while doing the work**
 It was difficult to figure out which attacks would work on each site. This was the most time consuming part of the assignment.  Nevertheless, I acknowledge that this is a major aspect of hacking and what makes the assignment far closer to real-world encounters. 
+I also had the most difficulty completing the CSRF challenge. I discovered that ```<body onload="document.CSRF.submit()">``` and the name given to the form were different. This caused the page to load improperly and thus would not carry out a successful attack. Upon fixing this, the attack was successful.
