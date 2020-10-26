@@ -51,7 +51,9 @@ Description:
 Vulnerability #1: **Cross-Site Scripting (XSS)**
 
 Description:
-  1. 
+  1. Go to the contact tab and fill out the form with a fake name and email and the following inside the feedback section: ```<script>alert('[Name] found the XSS');</script>```
+  2. Then log in and proceed to the 'Feedback' section
+  3. Here the alert will pop up, indicating that the attack was successful.
 
 <img src="Green-XSS.gif">
 
