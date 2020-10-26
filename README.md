@@ -1,6 +1,6 @@
 # Project 8 - Pentesting Live Targets
 
-Time spent: **7** hours spent in total
+Time spent: **8** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -17,7 +17,7 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1:**Session Hijacking/Fixation**
+**Vulnerability #1: Session Hijacking/Fixation**
 
 Description:
 
@@ -38,7 +38,7 @@ Description:
   5. The attacker can now log in on the attacker browser.
 <img src="Blue-Session_Fixation.gif">
 
-Vulnerability #2: **SQL Injection (SQLi)**
+**Vulnerability #2: SQL Injection (SQLi)**
 
 Description:
   1. Log into the site and navigate to the Salespeople page
@@ -48,7 +48,7 @@ Description:
 
 ## Green
 
-Vulnerability #1: **Cross-Site Scripting (XSS)**
+**Vulnerability #1: Cross-Site Scripting (XSS)**
 
 Description:
   1. Go to the contact tab and fill out the form with a fake name and email and the following inside the feedback section: ```<script>alert('[Name] found the XSS');</script>```
@@ -57,7 +57,7 @@ Description:
 
 <img src="Green-XSS.gif">
 
-Vulnerability #2: **Username Enumeration**
+**Vulnerability #2: Username Enumeration**
 
 Description:
   1. When attempting to log in on the Green site with a existing username, the error message is presented in bold. Also, the html class is labeled **"failure"**.
@@ -69,7 +69,7 @@ Description:
 
 ## Red
 
-Vulnerability #1: **Insecure Direct Object Reference (IDOR)**
+**Vulnerability #1: Insecure Direct Object Reference (IDOR)**
 
 Description:
   1. Navigate to the 'Find a Salesperson' tab
@@ -79,7 +79,7 @@ Description:
 
 <img src="Red-IDOR.gif">
 
-Vulnerability #2: **Cross-Site Request Forgery (CSRF)**
+**Vulnerability #2: Cross-Site Request Forgery (CSRF)**
 
 Description:
   1. Go to the 'Salespeople' tab and view one of the salespeople. *There are no tokens used to identify an admin user on the Red site.* 
@@ -105,6 +105,21 @@ Description:
 ```
 3. When the page is opened in the browser, it changes the specified user on the actual Red site. 
 4. Return to the Red site and refresh the page. The salesperson's data should be changed.
+
+
+## Optional
+**Bonus Objective 1:** Build on Objective #3 (SQL Injection). Experiment to see what other kinds of information you can get the database to reveal.
+
+Description:
+  1. Navigate to the 'Salespeople' section
+  2. Select one of the names
+  3. In the URL, paste the following SQL script: 
+  ```
+  ' AND 0 UNION SELECT 1,2,3,4,GROUP_CONCAT(table_name,0x2e,column_name,"\n") FROM information_schema.columns WHERE table_schema=database(); -- -
+  ```
+  4. The page will display all of the database's table and column names. 
+  
+<img src="Bonus-SQLi.gif">
 
 
 ## Notes
