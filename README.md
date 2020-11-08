@@ -55,7 +55,7 @@ gcloud compute ssh mhn-admin
 ```
 The Ubuntu welcome message and shell prompt will then appear.
 
-*Note: Many commands shown in the gif produced errors because I have already deployed the MHN-Admin
+*Note: Many commands shown in the gif produced errors because I have already deployed the MHN-Admin*
 <img src="mhn-admin.gif">
 
 ### Dionaea Honeypot Deployment (Required)
@@ -64,7 +64,7 @@ The Ubuntu welcome message and shell prompt will then appear.
 **Briefly in your own words, what does dionaea do?**
 Dionaea over HTTP is a honeypot used to capture attack payloads and malware.  Its goal is to obtain a copy of the malware exploiting vulnerabilities exposed by services offered on a network.
 
-*Note: The first command shown in the gif produced an error because I had already created the firewall rule to allow incoming TCP and UDP traffic on all ports for honeypot sensors
+*Note: The first command shown in the gif produced an error because I had already created the firewall rule to allow incoming TCP and UDP traffic on all ports for honeypot sensors*
 <img src="dionaea-honeypot.gif">
 
 ### Database Backup (Required) 
@@ -72,7 +72,7 @@ Dionaea over HTTP is a honeypot used to capture attack payloads and malware.  It
 **Summary:** 
 **What is the RDBMS that MHN-Admin uses?**
 A RDBMS (Relational Database Management System) is a type of database whose structure allows users to identify and access data in relation to another piece of data in the database. The RDBMS that MHN-Admin uses is found on the Attacks Report page.  
-<img src="rdbms.jpeg">
+<img src="rdbms.jpg">
 
 **What information does the exported JSON file record?** 
 The exported JSON file records all of the data that is collected in the attacks report of the MHN admin. The file displays the ID, protocol, timestamp, source IP, source port, destination port, identifier, and honeypot type for each captured attack. Example entry: ```{"_id":{"$oid":"5f9f22f6616a1e555b4dcda2"},"protocol":"pcap","hpfeed_id":{"$oid":"5f9f22f5616a1e555b4dcda1"},"timestamp":{"$date":"2020-11-01T21:04:53.191Z"},"source_ip":"45.129.33.9","source_port":59961,"destination_port":11124,"identifier":"ce766616-1c85-11eb-9027-42010a800002","honeypot":"dionaea"}```
