@@ -65,7 +65,10 @@ The Ubuntu welcome message and shell prompt will then appear.
 Dionaea over HTTP is a honeypot used to capture attack payloads and malware.  Its goal is to obtain a copy of the malware exploiting vulnerabilities exposed by services offered on a network.
 
 *Note: The first command shown in the gif produced an error because I had already created the firewall rule to allow incoming TCP and UDP traffic on all ports for honeypot sensors*
-<img src="dionaea-honeypot.gif">
+<img src="dionaea-honeypot1.gif">
+
+This gif show how to install the honeypot application
+<img src="dionaea-honeypot2.gif">
 
 ### Database Backup (Required) 
 
