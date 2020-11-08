@@ -55,11 +55,14 @@ gcloud compute ssh mhn-admin
 ```
 The Ubuntu welcome message and shell prompt will then appear.
 
+*Note: Many commands shown in the gif produced errors because I have already deployed the MHN-Admin
 <img src="mhn-admin.gif">
 
 ### Dionaea Honeypot Deployment (Required)
 
-**Summary:** Briefly in your own words, what does dionaea do?
+**Summary:** 
+**Briefly in your own words, what does dionaea do?**
+
 
 <img src="dionaea-honeypot.gif">
 
@@ -78,11 +81,17 @@ The exported JSON file records all of the data that is collected in the attacks 
 
 ### Deploying Additional Honeypot(s) (Optional)
 
-#### X Honeypot
+#### Snort Honeypot
 
 **Summary:** What does this honeypot simulate and do for a security researcher?
 
-<img src="x-honeypot.gif">
+<img src="snort-honeypot.gif">
+
+#### Conpot Honeypot
+
+**Summary:** What does this honeypot simulate and do for a security researcher?
+
+<img src="conpot-honeypot.gif">
 
 ### Malware Capture and Identification (Optional)
 
