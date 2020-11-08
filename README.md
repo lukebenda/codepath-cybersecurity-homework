@@ -85,13 +85,17 @@ The exported JSON file records all of the data that is collected in the attacks 
 
 #### Snort Honeypot
 
-**Summary:** What does this honeypot simulate and do for a security researcher?
+**Summary:** 
+**What does this honeypot simulate and do for a security researcher?**
+Snort is an open source intrusion prevention system capable of real-time traffic analysis, alerting, blocking, and packet logging. It utilizes a combination of protocol analysis and pattern matching in order to detect a anomalies, misuse and attacks. Snort is capable of detecting and responding in real-time, sending alerts, performing session sniping, logging packets, or dropping sessions/packets when deployed in-line. Snort has three primary functional modes: packet sniffer (like tcpdump), packet logger (useful for network traffic debugging, etc), or as a full blown network intrusion detection and prevention system.
 
 <img src="snort-honeypot.gif">
 
 #### Conpot Honeypot
 
-**Summary:** What does this honeypot simulate and do for a security researcher?
+**Summary:** 
+**What does this honeypot simulate and do for a security researcher?**
+Conpot is a low interactive server side Industrial Control Systems honeypot designed to be easy to deploy, modify and extend. The goal of this honeypot is to collect intelligence about the motives and methods of adversaries targeting industrial control systems.
 
 <img src="conpot-honeypot.gif">
 
@@ -109,4 +113,6 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 ## Notes
 
-Describe any challenges encountered while doing the assignment.
+**Describe any challenges encountered while doing the assignment.**
+I was unable to figure out how to identify the malware attacks nor get the file hash of the malware sample. There was little/no guidance for this step.
+
