@@ -117,5 +117,6 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 ## Notes
 
 **Describe any challenges encountered while doing the assignment.**
+
 I was unable to figure out how to identify the malware attacks nor get the file hash of the malware sample. There was little/no guidance for this step.
 
