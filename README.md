@@ -27,7 +27,7 @@ Time spent: **6** hours spent in total
     **9. Then select 'View Attachment Page'**<br>
     **10.When vieiwin the page, the alert is displayed, thus the exploit succeeds.**<br>
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1]
        **N/A**
     
 2. (Required) Vulnerability Name or ID **Nav Menu Title Cross-Site Scripting (XSS)**
